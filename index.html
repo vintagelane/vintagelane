@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vintage Lane</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <script>
+    window.addEventListener("load", (event) => {
+      let visibility = false;
+      document.getElementById("button").onclick = function () {
+        if (visibility == false) {
+          document.getElementById("dropdown").style.visibility = "visible";
+          visibility = true;
+        } else if (visibility == true) {
+          document.getElementById("dropdown").style.visibility = "hidden";
+          visibility = false;
+        }
+      };
+      document.getElementById("eg").onclick = function () {
+        window.location.href = "https://eg.vintagelane.co";
+      };
+      document.getElementById("uk").onclick = function () {
+        window.location.href = "https://uk.vintagelane.co";
+      };
+    });
+  </script>
+
+  <body>
+    <div>
+      <div class="home-container">
+        <img alt="Vintage Lane Logo" src="./assets/logo.png" class="logo" />
+        <div class="home-container-inner">
+          <div class="country-dropdown">
+            <button type="button" id="button" class="country-button">
+              Select Country<img class="arrow" src="./assets/arrow.png" />
+            </button>
+            <div class="country-dropdown-values" id="dropdown">
+              <button type="button" id="eg" class="country-eg">Egypt</button>
+              <button
+                type="button"
+                id="uk"
+                class="country-uk disabled"
+                disabled
+              >
+                United Kingdom
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
