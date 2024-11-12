@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-size: 16px;
+  color: black;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  height: 100vh;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: flex-start;
+  background-image: url("./assets/background-desktop.jpg");
+  background-position: center;
+}
+.logo {
+  height: 60px;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+.home-container-inner {
+  margin-left: 80px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.country-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+.country-dropdown-values {
+  visibility: hidden;
+  background-color: rgba(234, 232, 228, 0.8);
+  border-radius: 20px;
+}
+.country-button {
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  align-self: center;
+  transition: 0.3s;
+  margin-bottom: 5px;
+}
+.country-eg {
+  border: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  align-self: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.country-uk {
+  border: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  align-self: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  &.disabled {
+    color: lightgray;
+    cursor: default !important;
+  }
+}
+.arrow {
+  width: 12px;
+  height: 12px;
+}
+.country-button:hover {
+  cursor: pointer;
+}
+.country-eg:hover {
+  cursor: pointer;
+}
+.country-uk:hover {
+  cursor: pointer;
+}
+.country-dropdown {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 479px) {
+  .home-container {
+    align-items: center;
+    background-image: url("./assets/background-mobile.jpg");
+  }
+  .logo {
+    height: 40px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .home-container-inner {
+    margin-left: 0;
+  }
+}
