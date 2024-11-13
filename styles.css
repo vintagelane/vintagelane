@@ -74,7 +74,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   &.disabled {
-    color: lightgray;
+    color: gray;
     cursor: default !important;
   }
 }
