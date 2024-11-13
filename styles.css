@@ -16,9 +16,10 @@
   background-size: cover;
   justify-content: flex-start;
   background-image: url("./assets/background-desktop.jpg");
-  background-position: center;
+  background-position: top;
 }
 .logo {
+  display: none;
   height: 60px;
   margin-top: 80px;
   margin-left: 80px;
@@ -99,6 +100,7 @@
   .home-container {
     align-items: center;
     background-image: url("./assets/background-mobile.jpg");
+    background-position: right;
   }
   .logo {
     height: 40px;
