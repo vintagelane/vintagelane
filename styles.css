@@ -13,10 +13,12 @@
   height: 100vh;
   align-items: flex-start;
   flex-direction: column;
-  background-size: cover;
+  background-size: contain;
   justify-content: flex-start;
   background-image: url("./assets/background-desktop.jpg");
   background-position: top;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 .logo {
   display: none;
@@ -109,5 +111,7 @@
   }
   .home-container-inner {
     margin-left: 0;
+    margin-top: 200px;
+    align-items: flex-start;
   }
 }
