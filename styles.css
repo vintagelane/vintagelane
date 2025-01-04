@@ -110,6 +110,9 @@
     margin-top: 40px;
   }
   .home-container-inner {
-    margin-left: 0;
+    margin-left: -120px;
+  }
+  .country-dropdown {
+    margin-top: 180px;
   }
 }
